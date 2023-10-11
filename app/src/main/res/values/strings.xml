@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Banco-anmosu</string>
+    <string name="password">Introduce la contraseña</string>
+    <string name="titulo">Iniciar Sesion</string>
+    <string name="tit_usuario">Introduce el usuario</string>
+    <string name="Enviar">Enviar</string>
+    <string name="obligatorio">Obligatorio</string>
+    <string name="Salir">Salir</string>
+    <string name="Bienvenido">Bienvenido/a</string>
+</resources>
