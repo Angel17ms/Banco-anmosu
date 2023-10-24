@@ -8,7 +8,6 @@ import android.view.View
 import androidx.core.view.isEmpty
 import androidx.core.view.isNotEmpty
 import com.example.banco_anmosu.databinding.ActivityChangePassBinding
-import com.example.banco_anmosu.databinding.ActivityLoginBinding
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputLayout
 
