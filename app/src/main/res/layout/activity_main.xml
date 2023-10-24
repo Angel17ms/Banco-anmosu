@@ -40,14 +40,51 @@
                     tools:ignore="NotSibling"
                     app:layout_constraintEnd_toEndOf="@+id/cardView"
                     android:text="@string/Bienvenido"
-                    android:textSize="17dp"
+                    android:textSize="17sp"
                     android:layout_marginStart="60dp"
                     android:layout_marginTop="25dp"/>
+
+                <TextView
+                    android:id="@+id/dni"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@+id/imagen"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="NotSibling"
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toEndOf="@+id/cardView"
+                    android:textSize="17sp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="55dp"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
 
     </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/appbar"
+            style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
+            android:layout_width="411dp"
+            android:layout_height="59dp"
+            android:layout_gravity="bottom"
+            app:navigationIcon="@drawable/baseline_menu_24"
+            tools:ignore="BottomAppBar,MissingConstraints" />
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_account_balance_24"
+            android:contentDescription="@string/bank"
+            app:layout_anchor="@id/appbar"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
