@@ -24,10 +24,11 @@ class Change_Password : AppCompatActivity() {
             }
             if (contNuevaRepe.isEmpty()) {
                 binding.contNuevaRepe.error = "Tienes que volver a poner la contraseña"
-            }
-            if (!(contNueva.equals(contNuevaRepe))) {
-                binding.contNueva.error = "Las contraseñas deben ser iguales"
-                binding.contNuevaRepe.error = "Las contraseñas deben ser iguales"
+            }else {
+                if (!(contNueva.equals(contNuevaRepe))) {
+                    binding.contNueva.error = "Las contraseñas deben ser iguales"
+                    binding.contNuevaRepe.error = "Las contraseñas deben ser iguales"
+                }
             }
             if (contNueva.equals(contNuevaRepe) && contNueva.isNotEmpty() && contNuevaRepe.isNotEmpty()) {
                 val intent = Intent(this, LoginActivity::class.java)

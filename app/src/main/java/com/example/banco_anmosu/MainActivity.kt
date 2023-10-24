@@ -22,6 +22,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Change_Password::class.java)
             startActivity(intent)
         }
+        binding.boton7.setOnClickListener {
+            val intent = Intent(this, WelcomeActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
