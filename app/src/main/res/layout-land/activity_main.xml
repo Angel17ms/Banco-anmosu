@@ -35,33 +35,36 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toEndOf="@+id/imagen"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="NotSibling"
-                    app:layout_constraintEnd_toEndOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:text="@string/Bienvenido"
                     android:textSize="17sp"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="25dp"/>
+                    android:layout_marginTop="20dp"/>
 
                 <TextView
                     android:id="@+id/dni"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toEndOf="@+id/imagen"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:ignore="NotSibling"
                     android:textAlignment="center"
-                    app:layout_constraintEnd_toEndOf="@+id/cardView"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:textSize="17sp"
-                    android:layout_marginStart="80dp"
-                    android:layout_marginTop="55dp"/>
+                    android:layout_marginTop="50dp"
+                    />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.card.MaterialCardView>
 
 
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
     <LinearLayout
@@ -83,45 +86,57 @@
 
                 <Button
                     android:id="@+id/boton1"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
                     android:text="@string/posicion_global"
                     />
                 <Button
                     android:id="@+id/boton2"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/boton1"
+                    app:layout_constraintStart_toStartOf="@id/guideline3"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:text="@string/movimientos"
                     />
                 <Button
                     android:id="@+id/boton3"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/boton2"
+                    app:layout_constraintTop_toBottomOf="@id/boton1"
+                    app:layout_constraintEnd_toStartOf="@id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
                     android:text="@string/transferencias"
                     />
                 <Button
                     android:id="@+id/boton4"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/boton3"
+                    app:layout_constraintTop_toBottomOf="@id/boton2"
+                    app:layout_constraintStart_toStartOf="@id/guideline3"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:text="@string/cambiar_contrase_a"
                     />
                 <Button
                     android:id="@+id/boton5"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/boton4"
+                    app:layout_constraintTop_toBottomOf="@id/boton3"
+                    app:layout_constraintEnd_toStartOf="@id/guideline3"
+                    app:layout_constraintStart_toStartOf="parent"
                     android:text="@string/promociones"
                     />
                 <Button
                     android:id="@+id/boton6"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@id/boton5"
+                    app:layout_constraintTop_toBottomOf="@id/boton4"
+                    app:layout_constraintStart_toStartOf="@id/guideline3"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:text="@string/cajeros"
                     />
+
                 <Button
                     android:id="@+id/boton7"
                     android:layout_width="match_parent"
@@ -129,6 +144,12 @@
                     app:layout_constraintTop_toBottomOf="@id/boton6"
                     android:text="@string/salir"
                     />
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -136,6 +157,7 @@
 
 
     </LinearLayout>
+    </ScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -144,7 +166,7 @@
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/appbar"
             style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-            android:layout_width="411dp"
+            android:layout_width="match_parent"
             android:layout_height="59dp"
             android:layout_gravity="bottom"
             app:navigationIcon="@drawable/baseline_menu_24"

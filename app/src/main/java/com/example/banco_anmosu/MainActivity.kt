@@ -1,5 +1,6 @@
 package com.example.banco_anmosu
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.banco_anmosu.databinding.ActivityMainBinding
@@ -16,6 +17,11 @@ class MainActivity : AppCompatActivity() {
         val dni = intent.getStringExtra("dni")
 
         binding.dni.text = "$dni"
+
+        binding.boton4.setOnClickListener {
+            val intent = Intent(this, ChangePassActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
