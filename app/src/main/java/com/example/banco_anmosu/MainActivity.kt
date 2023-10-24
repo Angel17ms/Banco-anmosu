@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding.dni.text = "$dni"
 
         binding.boton4.setOnClickListener {
-            val intent = Intent(this, ChangePassActivity::class.java)
+            val intent = Intent(this, Change_Password::class.java)
             startActivity(intent)
         }
 

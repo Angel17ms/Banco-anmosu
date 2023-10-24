@@ -17,4 +17,7 @@
     <string name="salir">SALIR</string>
     <string name="bienvenido_a_a_mi_banco">Bienvenido/a a mi banco</string>
     <string name="entrar">Entrar</string>
+    <string name="introduce_tu_contrase_a_anterior">Introduce tu contraseña anterior</string>
+    <string name="introduce_tu_nueva_contrase_a">Introduce tu nueva contraseña</string>
+    <string name="repite_tu_nueva_contrase_a">Repite tu nueva contraseña</string>
 </resources>

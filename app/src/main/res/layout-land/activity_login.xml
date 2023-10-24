@@ -63,7 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginTop="80dp">
+        android:layout_marginTop="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtpass"
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toEndOf="@+id/guideline2"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="40dp"
         android:text="@string/Enviar"/>
 
     <com.google.android.material.button.MaterialButton
@@ -97,7 +97,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="40dp"
         android:text="@string/Salir"/>
 
     <androidx.constraintlayout.widget.Guideline
